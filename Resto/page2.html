@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vente en ligne</title>
+    <style>
+        /* CSS pour la mise en forme */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"], input[type="reset"], button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover, button:hover {
+            background-color: #0056b3;
+        }
+        .product {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 100px;
+            margin-right: 20px;
+        }
+        .product-info {
+            flex-grow: 1;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Page 1: Authentification -->
+        <form id="authForm">
+            <h2>Authentification</h2>
+            <label for="username">Nom d'utilisateur :</label>
+            <input type="text" id="username" placeholder="<Nom d'utilisateur>">
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" placeholder="<Mot de passe>">
+            <label for="country">Pays :</label>
+            <select id="country">
+                <option value="france">France</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+            </select>
+            <input type="submit" value="Valider">
+            <input type="reset" value="Modifier">
+            <button type="button">Annuler</button>
+        </form>
+
+        <!-- Page 2: Produits -->
+        <div id="products">
+            <h2>Nos Produits</h2>
+            <div class="product">
+                <img src="product1.jpg" alt="Produit 1">
+                <div class="product-info">
+                    <h3>Produit 1</h3>
+                    <p>Prix: $50</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="product2.jpg" alt="Produit 2">
+                <div class="product-info">
+                    <h3>Produit 2</h3>
+                    <p>Prix: $70</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 3: Footer -->
+        <footer>
+            <p class="copyright">&copy; 2024 VotreNom</p>
+            <p>Votre adresse e-mail : contact@votreadresse.com</p>
+            <nav>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Aide</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
